@@ -1,0 +1,206 @@
+/*Start setup*/
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*End start setup*/
+
+img {
+    display: block;
+}
+
+
+/*Utility classes*/
+.nowrap {
+    white-space: nowrap;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+
+/*End Utility classes*/
+
+body {
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgb(205, 180, 243) , aqua);
+}
+
+/*Start styling top container*/
+
+.container {
+    background-color: rgb(251, 210,156);
+    background-image: url('../Images/scenic2.jpg');
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.me {
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.h1 {
+    font-size: 500%;
+    color:aliceblue;
+    text-shadow: 5px 5px 10px black;
+}
+
+.profile-pic-figure {
+    width: 35%;
+}
+
+.profile-pic-figure img {
+    width: 50%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double gray;
+    border-radius: 50%;
+}
+
+/*Stop styling top container*/
+
+/*Styling H1 & H2 &H3*/
+h1 {
+    text-align: center;
+    color: rgb(238, 169, 78);
+    text-shadow: 2px 2px gray;
+    margin: 5px;
+    padding: 5px;
+ 
+}
+
+h2 {
+    text-align: center;
+    color: rgb(238, 169, 78);
+    text-shadow: 2px 2px gray;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 0px;
+    color: rgb(173, 84, 19);
+    margin: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+/*End of styling H1 & H2 & H3*/
+
+
+/*start stylingvideos*/
+.videos {
+    text-align: center;
+    color: blueviolet;
+    break-inside: avoid;
+  
+}
+
+video {
+    border: double 8px rgb(211, 233, 13);
+}
+
+figcaption {
+    text-align:center;
+    color: rgb(173, 84, 19);
+    font-size: 18px;
+    margin-bottom: 15px; 
+}
+
+
+/*End of styling videos*/
+
+/*Styling footer*/
+footer {
+    text-align: center;
+    font-size: small; 
+}
+
+.footer {
+    color: rgb(16, 169, 216);
+}
+/*End of styling footer*/
+
+/*Start making columns*/
+
+.columns {
+    column-count: 4;
+    break-inside: avoid;
+    break-after: avoid-column;   
+}
+ 
+/*End making columns*/
+
+/*start making media screen*/
+@media only screen and (max-width: 1300px) {
+    .columns {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+    }
+   .offscreen {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+   }
+}
+
+@media only screen and (max-width: 1100px) {
+    .columns {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+    }
+   .offscreen {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+   }
+   .h1 {
+    font-size: 50px;
+   }
+}
+
+@media only screen and (max-width: 750px) {
+    .columns {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+    }
+   .offscreen {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+   }
+   .h1 {
+    font-size: 28px;
+   }
+}
+  /*End making media screen*/
